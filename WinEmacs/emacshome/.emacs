@@ -25,6 +25,7 @@
  '(cursor-type (quote bar))
  '(custom-enabled-themes (quote (tango-dark)))
  '(delete-selection-mode 1)
+ '(display-line-numbers (quote relative))
  '(package-selected-packages
    (quote
     (emmet-mode yasnippet-snippets yasnippet omnisharp lua-mode)))
