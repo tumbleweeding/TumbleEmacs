@@ -29,7 +29,15 @@
  '(package-selected-packages
    (quote
     (emmet-mode yasnippet-snippets yasnippet omnisharp lua-mode)))
- '(show-paren-mode 1))
+ '(show-paren-mode 1)
+
+ ;; Put autosave files (#foo#) and backup files (foo~) in ~/.emacs.d/.
+ '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
+ '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
+
+;;create the autosave directory if necessary, since emacs won't.
+(make-directory "~/.emacs.d/autosaves/" t)
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
